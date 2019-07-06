@@ -1,4 +1,4 @@
-# `ArchLinux` 的安装教程
+# `ArchLinux` 安装教程
 [![GitHub issues](https://img.shields.io/github/issues/ds19991999/ArchLinux-Install-Tutorial.svg)](https://github.com/ds19991999/ArchLinux-Install-Tutorial/issues)
 [![Github downloads](https://img.shields.io/github/downloads/ds19991999/ds19991999.github.io/total.svg)](https://github.com/ds19991999/ArchLinux-Install-Tutorial/releases/latest)
 [![DUB](https://img.shields.io/dub/l/vibe-d.svg)](https://github.com/ds19991999/ArchLinux-Install-Tutorial/blob/master/LICENSE)
