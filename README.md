@@ -56,31 +56,31 @@
 
 ## 创建虚拟机
 
-![](https://image.creat.kim/picgo/20190705235035.png)
+![](http://image.creat.kim/picgo/20190705235035.png)
 
-![](https://image.creat.kim/picgo/20190705235133.png)
+![](http://image.creat.kim/picgo/20190705235133.png)
 
-![](https://image.creat.kim/picgo/20190705235158.png)
+![](http://image.creat.kim/picgo/20190705235158.png)
 
-![](https://image.creat.kim/picgo/20190705235252.png)
+![](http://image.creat.kim/picgo/20190705235252.png)
 
-![](https://image.creat.kim/picgo/20190705235450.png)
+![](http://image.creat.kim/picgo/20190705235450.png)
 
 
 
-![](https://image.creat.kim/picgo/20190705235739.png)
+![](http://image.creat.kim/picgo/20190705235739.png)
 
 这里一定要选`UEFI`
 
-![](https://image.creat.kim/picgo/20190706075834.png)
+![](http://image.creat.kim/picgo/20190706075834.png)
 
-![](https://image.creat.kim/picgo/20190705235808.png)
+![](http://image.creat.kim/picgo/20190705235808.png)
 
 ## 进入临时系统
 
-![](https://image.creat.kim/picgo/20190706080050.png)
+![](http://image.creat.kim/picgo/20190706080050.png)
 
-![](https://image.creat.kim/picgo/20190706000115.png)
+![](http://image.creat.kim/picgo/20190706000115.png)
 
 ## 开始安装系统
 
@@ -91,13 +91,13 @@ dhcpcd
 ping -c 4 baidu.com
 ```
 
-![](https://image.creat.kim/picgo/20190706000449.png)
+![](http://image.creat.kim/picgo/20190706000449.png)
 
 ```shell
 timedatectl set-ntp true
 ```
 
-![](https://image.creat.kim/picgo/20190706000616.png)
+![](http://image.creat.kim/picgo/20190706000616.png)
 
 ### 分区
 
@@ -105,7 +105,7 @@ timedatectl set-ntp true
 fdisk -l
 ```
 
-![](https://image.creat.kim/picgo/20190706000743.png)
+![](http://image.creat.kim/picgo/20190706000743.png)
 
 这里对`/dev/sda`进行分区
 
@@ -119,7 +119,7 @@ n
 p
 ```
 
-![](https://image.creat.kim/picgo/20190706001335.png)
+![](http://image.creat.kim/picgo/20190706001335.png)
 
 ```
 t
@@ -128,7 +128,7 @@ t
 w
 ```
 
-![](https://image.creat.kim/picgo/20190706001524.png)
+![](http://image.creat.kim/picgo/20190706001524.png)
 
 格式化`esp`分区和根分区
 
@@ -150,7 +150,7 @@ mkdir /mnt/boot
 mount /dev/sda1 /mnt/boot
 ```
 
-![](https://image.creat.kim/picgo/20190706002020.png)
+![](http://image.creat.kim/picgo/20190706002020.png)
 
 ### 安装基本系统
 
@@ -172,7 +172,7 @@ pacstrap /mnt base base-devel
 
 ### 配置
 
-![](https://image.creat.kim/picgo/20190706003559.png)
+![](http://image.creat.kim/picgo/20190706003559.png)
 
 ```shell
 # 生成自动挂载分区的 fstab 文件
@@ -237,9 +237,9 @@ exit
 reboot
 ```
 
-![](https://image.creat.kim/picgo/20190706082516.png)
+![](http://image.creat.kim/picgo/20190706082516.png)
 
-![](https://image.creat.kim/picgo/20190706082623.png)
+![](http://image.creat.kim/picgo/20190706082623.png)
 
 ### 安装前准备
 
@@ -278,7 +278,7 @@ sudo pacman -S net-tools dnsutils inetutils iproute2
 ifconfig
 ```
 
-![](https://image.creat.kim/picgo/20190706085916.png)
+![](http://image.creat.kim/picgo/20190706085916.png)
 
 
 
@@ -312,7 +312,7 @@ sudo pacman -S network-manager-applet
 reboot
 ```
 
-![](https://image.creat.kim/picgo/20190706093410.png)
+![](http://image.creat.kim/picgo/20190706093410.png)
 
 ```shell
 # 滚动更新
@@ -432,7 +432,7 @@ vim /etc/pacman.conf
 # 将color注释取消
 ```
 
-![](https://image.creat.kim/picgo/20190706155921.png)
+![](http://image.creat.kim/picgo/20190706155921.png)
 
 ## 代理使用
 
