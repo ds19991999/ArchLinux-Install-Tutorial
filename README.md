@@ -164,8 +164,10 @@ nano /etc/pacman.d/mirrorlist
 
 安装基础包
 
-```shell
-pacstrap /mnt base base-devel
+~~`pacstrap /mnt base base-devel`~~
+
+```
+pacstrap -i /mnt base base-devel linux linux-firmware
 ```
 
 等几分钟就安装完了。
